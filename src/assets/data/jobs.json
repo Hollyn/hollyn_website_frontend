@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Software Engineer",
+    "employmentType": "Full-time",
+    "companyName": "MIS labs",
+    "location": "Hanoi, Vietnam",
+    "isCurrent": false,
+    "startDate": "June 2021",
+    "endDate": "February 2022",
+    "industry": "Information & Technology",
+    "description": "Worked on the design and implementation of a system based on micro-service architecture to facilitate the integration of any IoT device in a supply chain to collect traceability data with guaranteed data integrity with blockchain.",
+    "headline": "",
+    "skills": [
+      { "name": "Micro-service" },
+      { "name": "IoT" },
+      { "name": "Blockchain" },
+      { "name": "Jenkins" },
+      { "name": "Kubernetes" },
+      { "name": "Doker" },
+      { "name": "DorkerHub" },
+      { "name": "Git" },
+      { "name": "NodeJS" },
+      { "name": "ReactJS" },
+      { "name": "NestJS" }
+    ]
+  },
+  {
+    "title": "Frontend Developer",
+    "employmentType": "Freelance",
+    "companyName": "S2TEL SOLUTIONS INC",
+    "location": "Quebec, Canada",
+    "isCurrent": false,
+    "startDate": "June 2021",
+    "endDate": "December 2021",
+    "industry": "",
+    "description": "I worked as a front-end developer on the implementation of the e-commerce platform \"WIPIP\" that also manage the delivery of the products.",
+    "headline": "",
+    "skills": [
+      {
+        "name": "Angular"
+      }
+    ]
+  },
+  {
+    "title": "Software Engineer",
+    "employmentType": "Full-time",
+    "companyName": "bogo.vn",
+    "location": "Hanoi, Vietnam",
+    "isCurrent": false,
+    "startDate": "October 2020 ",
+    "endDate": "June 2021",
+    "industry": "Information & Technology",
+    "description": "Worked as back-end developer in PHP and JavaScript on a system that helps people find discount online and a web search application - from design to production.",
+    "headline": "",
+    "skills": [
+      { "name": "PHP" },
+      { "name": "Laravel" },
+      { "name": "JQuery" },
+      { "name": "NodeJS" },
+      { "name": "AngularJS" },
+      { "name": "Angular" }
+    ]
+  },
+  {
+    "title": "Full Stack web developer",
+    "employmentType": "Full-time",
+    "companyName": "VMODEV",
+    "location": "Hanoi, Vietnam",
+    "isCurrent": false,
+    "startDate": "June 2019",
+    "endDate": "September 2021",
+    "industry": "Information & Technology",
+    "description": "Worked as full stack developer on miscellaneous large scale mobile and web applications as back-end and front-end developer. And I was a team leader on a event management app",
+    "headline": "",
+    "skills": [
+      { "name": "Swift" },
+      { "name": "Laravel" },
+      { "name": "PHP" },
+      { "name": "NodeJS" },
+      { "name": "HTML/CSS" },
+      { "name": "Symphony" },
+      { "name": "NestJS" },
+      { "name": "Excel" }
+    ]
+  }
+]

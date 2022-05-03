@@ -1,0 +1,240 @@
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.description-icon .icon-link {
+  font-weight: bold;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.description-icon .icon-link:not(:last-child) {
+  margin-right: 10px;
+}
+.description-icon .icon-link:hover {
+  color: #fff;
+}
+
+.description-icon {
+  text-align: centers;
+  /* justify-content: space-around; */
+}
+
+/* Title  */
+.btn-more-works {
+  font-weight: bold;
+  width: 100%;
+}
+.project {
+}
+.btn-more-works:hover,
+.button-contatiner-about-myself .btn-left:hover {
+  color: #fff !important;
+  background: rgba(24, 162, 184, 0.87) !important;
+  transition: all 0.25s;
+}
+
+.btn-more-works {
+  margin-top: 30px;
+}
+/* .pt-100 {
+  padding-top: 100px;
+}
+.pb-100 {
+  padding-bottom: 100px;
+} */
+.section-title {
+  margin-bottom: 20px;
+}
+.section-title p {
+  color: #777;
+  font-size: 16px;
+}
+.section-title h4 {
+  text-transform: capitalize;
+  font-size: 40px;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.section-title h4:before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(24, 162, 184, 0.87);
+  bottom: 0;
+  left: 50%;
+  margin-left: -30px;
+}
+.section-title h4:after {
+  position: absolute;
+  background-color: rgba(24, 162, 184, 0.87);
+  content: "";
+  width: 10px;
+  height: 10px;
+  bottom: -4px;
+  left: 50%;
+  margin-left: -5px;
+  border-radius: 50%;
+}
+ul.timeline-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+ul.timeline-list:before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: rgba(24, 162, 184, 0.87);
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+ul.timeline-list li {
+  position: relative;
+  clear: both;
+  display: table;
+}
+.timeline_content {
+  border: 2px solid rgba(24, 162, 184, 0.87);
+  background-color: #fff;
+}
+ul.timeline-list li .timeline_content {
+  width: 45%;
+  color: #333;
+  padding: 30px;
+  float: left;
+  text-align: right;
+}
+ul.timeline-list li:nth-child(2n) .timeline_content {
+  float: right;
+  text-align: left;
+}
+.timeline_content h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+ul.timeline-list li:before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: rgba(24, 162, 184, 0.87);
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.timeline_content span {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: poppins;
+  color: rgba(24, 162, 184, 0.87);
+}
+
+@media (min-width: 300px) {
+  .latest-works .project img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    margin: 15px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .latest-works .project img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.about-me-heading,
+.latest-work-heading {
+  border-bottom: solid 1px #18a2b8;
+  display: inline !important;
+}
+
+.project-desc {
+  position: absolute;
+  background: rgba(24, 162, 184, 0.87);
+  top: 15px;
+  right: 15px;
+  left: 15px;
+  bottom: 15px;
+  border-radius: 3px;
+  opacity: 0;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.project-desc:hover {
+  opacity: 1;
+  transition: all 0.25s;
+}
+
+.image-about-myself {
+  display: none !important;
+}
+
+@media (min-width: 992px) {
+  .image-about-myself {
+    display: block !important;
+  }
+}
+
+.btn-more-works,
+.button-contatiner-about-myself .btn-left,
+.button-contatiner-about-myself .btn-right {
+  font-weight: bold;
+}
+
+.btn-more-works:hover,
+.button-contatiner-about-myself .btn-left:hover {
+  color: #fff !important;
+  background: rgba(24, 162, 184, 0.87) !important;
+  transition: all 0.25s;
+}
+
+.btn-more-works {
+  margin-top: 10px;
+}
+
+/* Dark mode */
+
+body.theme-dark .job .row {
+  background-color: rgba(24, 162, 184, 0.8) !important;
+  color: #fff !important;
+}
+
+body.theme-dark .job .heading,
+body.theme-dark .job p {
+  color: #e7e8eb;
+}
+
+body.theme-dark .job .row:hover .heading {
+  color: #000;
+}
+
+body.theme-dark .job .row:hover .subtitle {
+  color: #000;
+  font-style: italic;
+}
+
+body.theme-dark .job .row:hover p {
+  margin-bottom: 10px;
+  color: #37434d;
+}
+
+body.theme-dark .job .row:hover {
+  background-color: #f7f7f7 !important;
+}

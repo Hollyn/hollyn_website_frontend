@@ -1,0 +1,62 @@
+<section>
+    <div class="row">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xl-8 mx-auto text-center">
+                    <div class="section-title">
+                        <h4>Latest Works</h4>
+                        <p>Here are some of the most recent projects I worked on</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div align="center" class="mb-4">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label (click)="chooseCategory('all')" class="btn btn-light active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> All
+                        </label>
+                        <label *ngFor="let category of categories" (click)="chooseCategory(category)"
+                            class="btn btn-light">
+                            <input type="radio" name="options" id="option{{category}}" autocomplete="off"> {{category}}
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row latest-works">
+
+
+                <ng-container *ngFor="let work of works$ | async">
+
+                    <div class="col-lg-4 col-md-6  col-sm-12 project"
+                        *ngIf="work.category.name == chosenCategory || chosenCategory == 'all'">
+                        <!-- <img src="http://10.0.0.153:3000/{{work.name}}"> -->
+                        <img src="assets/img/{{work.name}}">
+                        <!-- <a href="worklink"> -->
+                        <div class=" d-flex
+                            justify-content-center align-items-center project-desc">
+                            <div>
+                                <h3>{{work.title}}</h3>
+                                <p>{{work.description}}</p>
+                                <div class="description-icon" *ngIf="work.links && work.links.length > 0">
+                                    <a *ngFor="let link of work.links" href="{{link.link}}" rel="nofollow"
+                                        target="{{link.external == true ? '_blank': '_self'}}" class="icon-link">
+                                        <i class="fa {{link.icon}}"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </a> -->
+                    </div>
+                </ng-container>
+                <div class="col-12" *ngIf="works.length > 9">
+                    <button class="btn btn-primary btn-more-works" type="button"
+                        style="width: 100%;padding: 15px;background: rgba(255,255,255,0);color: #18a2b8;border-style: solid;border-color: #18a2b8;border-bottom-style: solid;">
+                        More Works
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

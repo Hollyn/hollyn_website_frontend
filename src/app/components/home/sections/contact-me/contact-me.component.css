@@ -1,0 +1,41 @@
+.contact-me .h1,
+.contact-me h1 {
+  display: inline !important;
+  border-bottom: solid 1px #f2f5f8;
+}
+
+.contact-me span {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.contact-me a {
+  text-decoration: none;
+  /* color: #f7f7f7; */
+}
+.contact-me .card {
+  padding: 0px 30px;
+  color: #37434d;
+}
+
+.contact-me a {
+  color: #f7f7f7;
+  font-weight: bold !important;
+  /* border: 1px solid rgb(228, 228, 231);
+    border-radius: 3px;
+    padding: 30px !important;
+    width: 300px; */
+}
+
+.contact-me button {
+  font-weight: bold;
+  padding: 8px 25px;
+}
+
+.contact-me-button-container {
+  margin-top: 15px;
+}
+
+.d-flex.justify-content-between.contact-me-contacts-container {
+  margin-top: 15px;
+}

@@ -1,0 +1,33 @@
+<section class="experience pt-100 pb-100" id="experience" *ngIf="jobs$ | async as jobResponse">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 mx-auto text-center">
+                <div class="section-title">
+                    <h4>Job History</h4>
+                    <p>The most recent jobs that prove my experience</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <ul class="timeline-list">
+                    <!-- Single Experience -->
+                    <li *ngFor="let job of jobResponse">
+                        <div class="timeline_content">
+                            <span>{{job.startDate}} - {{job.endDate}}</span>
+                            <h4>{{job.title}}</h4>
+                            <p>{{job.description}}</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12" *ngIf="jobResponse.length > 4">
+                <button class="btn btn-primary btn-more-works" type="button"
+                    style="padding: 15px;background: rgba(255,255,255,0);color: #18a2b8;border-style: solid;border-color: #18a2b8;border-bottom-style: solid;width: 100%;">
+                    More Jobs
+                </button>
+            </div>
+        </div>
+    </div>
+
+</section>

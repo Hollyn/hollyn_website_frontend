@@ -1,0 +1,239 @@
+@media (min-width: 300px) {
+  .latest-works .project img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    margin: 15px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .latest-works .project img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.about-me-heading,
+.latest-work-heading {
+  border-bottom: solid 1px #18a2b8;
+  display: inline !important;
+}
+
+.project-desc {
+  position: absolute;
+  background: rgba(24, 162, 184, 0.87);
+  top: 15px;
+  right: 15px;
+  left: 15px;
+  bottom: 15px;
+  border-radius: 3px;
+  opacity: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.project-desc:hover {
+  opacity: 1;
+  transition: all 0.25s;
+}
+
+.image-about-myself {
+  display: none !important;
+}
+
+@media (min-width: 992px) {
+  .image-about-myself {
+    display: block !important;
+  }
+}
+
+.button-contatiner-about-myself button {
+  width: 100%;
+}
+
+.button-contatiner-about-myself .btn-lett {
+  margin-right: 15px;
+}
+
+.button-contatiner-about-myself .btn-right {
+  margin-left: 15px;
+}
+
+.contact-me .h1,
+.contact-me h1 {
+  display: inline !important;
+  border-bottom: solid 1px #f2f5f8;
+}
+
+.contact-me span {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.contact-me a {
+  text-decoration: none;
+  /* color: #f7f7f7; */
+}
+.contact-me .card {
+  padding: 0px 30px;
+  color: #37434d;
+}
+
+.contact-me a {
+  color: #f7f7f7;
+  font-weight: bold !important;
+  /* border: 1px solid rgb(228, 228, 231);
+  border-radius: 3px;
+  padding: 30px !important;
+  width: 300px; */
+}
+
+.contact-me button {
+  font-weight: bold;
+  padding: 8px 25px;
+}
+
+.contact-me-button-container {
+  margin-top: 15px;
+}
+
+.d-flex.justify-content-between.contact-me-contacts-container {
+  margin-top: 15px;
+}
+
+.header-hero-box {
+  background-color: rgba(24, 162, 184, 0.87);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 8vw));
+}
+
+.img-fluid.about-myself-image {
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .img-fluid.about-myself-image {
+    object-fit: cover;
+    max-height: 430px;
+    max-width: 370px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-fluid.about-myself-image {
+    object-fit: cover;
+    max-height: 400px;
+    max-width: 445px;
+  }
+}
+
+.btn-more-works,
+.button-contatiner-about-myself .btn-left,
+.button-contatiner-about-myself .btn-right {
+  font-weight: bold;
+}
+
+.btn-more-works:hover,
+.button-contatiner-about-myself .btn-left:hover {
+  color: #fff !important;
+  background: rgba(24, 162, 184, 0.87) !important;
+  transition: all 0.25s;
+}
+
+.btn-more-works {
+  margin-top: 10px;
+}
+
+.job .heading {
+  color: #000;
+}
+
+.job .subtitle {
+  color: #000;
+  font-style: italic;
+}
+
+.job p {
+  margin-bottom: 10px;
+  color: #37434d;
+}
+
+.job-title {
+  padding-bottom: 0px;
+}
+
+.job-title .heading {
+  margin-bottom: 0px;
+}
+
+.job .row:hover {
+  cursor: pointer;
+  background: rgba(24, 162, 184, 0.2) !important;
+  transition: all 0.25s !important;
+  color: #f7f8fb !important;
+}
+
+.hero-box-hire-me-button {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+@media (min-width: 300px) {
+  .hero-box-text {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-box-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-box-hire-me-button {
+    margin-top: 15px;
+  }
+}
+
+.job .row {
+  background: #f7f7f7;
+  margin: 0;
+  padding: 10px;
+  border-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* Dark mode */
+
+body.theme-dark .job .row {
+  background-color: rgba(24, 162, 184, 0.8) !important;
+  color: #fff !important;
+}
+
+body.theme-dark .job .heading,
+body.theme-dark .job p {
+  color: #e7e8eb;
+}
+
+body.theme-dark .job .row:hover .heading {
+  color: #000;
+}
+
+body.theme-dark .job .row:hover .subtitle {
+  color: #000;
+  font-style: italic;
+}
+
+body.theme-dark .job .row:hover p {
+  margin-bottom: 10px;
+  color: #37434d;
+}
+
+body.theme-dark .job .row:hover {
+  background-color: #f7f7f7 !important;
+}

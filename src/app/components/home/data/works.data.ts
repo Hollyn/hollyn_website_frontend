@@ -1,0 +1,29 @@
+export const WORKS = [
+  {
+    id: 1,
+    name: 'tenereteam.png',
+    title: 'Coupon web APP',
+    description:
+      'This app helps users to find coupons for their next shoppings',
+    link: '[{"icon":"fa-link","name":"Link","link":"https://www.tenereteam.com/about-us", "external":true},{"icon":"fa-github","name":"Github","link":"https://www.tenereteam.com/about-us", "external":true}]',
+    priority: 1,
+    showInFrontPage: true,
+    category: {
+      id: 1,
+      name: 'Web',
+    },
+  },
+  {
+    id: 2,
+    name: 'horsey.png',
+    title: 'Horsey',
+    description: 'This is a pixel art I drew for a challenge',
+    link: '[{"icon":"fa-file-text-o","name":"Article","link":"/about/horsey","external":false}]',
+    priority: 1,
+    showInFrontPage: true,
+    category: {
+      id: 1,
+      name: 'Pixel art',
+    },
+  },
+];

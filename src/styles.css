@@ -1,1 +1,119 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --dark-background-color: #2d2d2d;
+  --dark-color: #e7e8eb;
+}
+
+body {
+  --background-color: #fff;
+  --color: #3d4452;
+  color: var(--color);
+  background-color: var(--background-color);
+}
+
+.h1,
+h1 {
+  font-size: 2.5rem !important;
+}
+
+.h2,
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.h3,
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.h4,
+h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.h5,
+h5 {
+  font-size: 0.875rem;
+}
+
+.h1,
+h1,
+.h2,
+h2,
+.h3,
+h3,
+.h4,
+h4,
+.h5,
+h5,
+.h6,
+h6 {
+  font-family: "PT serif", serif !important;
+}
+
+.post-info a,
+.post-info span {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+p,
+a,
+span,
+input,
+textarea {
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  border-radius: 3px;
+}
+
+.container.latest-works img,
+.container.latest-works button,
+.container.about-myself button,
+.container.job-history button,
+.job .row,
+.card-inner-wrap {
+  box-shadow: 0px 1px 12px #e6e6e6;
+}
+
+.container.latest-works button,
+.container.job-history button {
+  background: rgba(0, 123, 255, 0);
+  border-style: none;
+  border-color: #18a2b8;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  padding: 15px;
+  width: 100%;
+}
+
+/* Dark mode */
+
+body.theme-dark,
+body.theme-dark .post-title,
+body.theme-dark .post-excerpt a {
+  color: var(--dark-color) !important;
+  background-color: var(--dark-background-color) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  body.theme-auto {
+    color: var(--dark-color);
+    background-color: var(--dark-background-color);
+  }
+}
+
+body.theme-dark .container.latest-works img,
+body.theme-dark .container.latest-works button,
+body.theme-dark .container.about-myself button,
+body.theme-dark .container.job-history button,
+body.theme-dark .job .row,
+body.theme-dark .card-inner-wrap {
+  box-shadow: none !important;
+}

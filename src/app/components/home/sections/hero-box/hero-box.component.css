@@ -1,0 +1,27 @@
+.hero-box-hire-me-button {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.header-hero-box {
+  background-color: rgba(24, 162, 184, 0.87);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 8vw));
+}
+
+@media (min-width: 300px) {
+  .hero-box-text {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-box-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-box-hire-me-button {
+    margin-top: 15px;
+  }
+}
